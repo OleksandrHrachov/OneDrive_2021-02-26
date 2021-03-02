@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header-game">
+      <div class="logo">
+       <img src="images/logo.svg" alt="LOGO">
+      </div>
+
+      <div class="counter-score">
+        <div class="score">SCORE</div>
+        <div class="counter">0</div>
+      </div>
+    </header>
+
+    <section class="rulesmodal">
+      <div class="rules-modal-top">
+        <div class="rules">RULES</div>
+        <div class="icon-close">
+          <img src="images/icon-close.svg" alt="close">
+        </div>
+      </div>
+
+     <div class="image-rules">
+      <img src="images/image-rules.svg" alt="">
+     </div>
+    </section>
+
+    <section class="step-1">
+      <!-- <div class="bg-triangle">
+        <img src="images/bg-triangle.svg" alt="">
+      </div> -->
+        <div class="icons">
+          <button class="field paper" data-field = "p">
+            <img class="paper-img" src="images/icon-paper.svg" alt="paper">
+          </button>
+          <button class="field rock" data-field="r">
+            <img class="rock-img" src="images/icon-rock.svg" alt="rock">
+          </button>
+          <button class="field scissors" data-field="s">
+            <img class="scissors-img" src="images/icon-scissors.svg" alt="scissors">
+          </button>
+        </div>
+
+    </section>
+
+
+    <section class="step-2">
+
+      <div class="you-picked">
+        <div class="text">YOU PICKED</div>
+        <div class="you-picked-img">
+          <div class="scissors">
+            <img class="scissors-img" src="images/icon-scissors.svg" alt="scissors">
+          </div>
+        </div>
+      </div>
+
+      <section class="lose">
+        <div class="lose-text">YOU LOSE</div>
+        <div class="play-again"> 
+          <button class="btn-play-again">PLAY AGAIN</button>
+        </div>
+      </section>
+
+      <section class="win">
+        <div class="win-text">YOU WIN</div>
+        <div class="play-again"> 
+          <button class="btn-play-again">PLAY AGAIN</button>
+        </div>
+      </section>
+
+      <div class="the-house-picked ">
+        <div class="text">THE HOUSE PICKED</div>
+        <div class="the-house-picked-img ">
+          <div class="rock">
+            <img class="rock-img" src="images/icon-rock.svg" alt="rock">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="btn-rules">
+      <button class="btn">RULES</button>
+    </section>
+    
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
