@@ -7,6 +7,20 @@ window.addEventListener('load', function () {
   let userStep;
   let compStep;
   let countUser = 0;
+  
+
+  let modal = document.getElementById('rulesModal');
+  let btnRules = document.getElementById('btnRules');
+  let close = document.getElementsByClassName('icon-close')[0];
+
+  btnRules.onclick = function () {
+    modal.style.display = 'block';
+  }
+
+  close.onclick = function () {
+    modal.style.display = 'none';
+  }
+
 
   
 
@@ -71,5 +85,8 @@ window.addEventListener('load', function () {
   play.addEventListener('click', playAgain);
   icons.addEventListener('click', choiceUser);
 });
+
+
+
 
 
